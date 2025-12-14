@@ -58,8 +58,7 @@ export default function Page() {
       {/* HERO */}
       <section
         id="home"
-        className="pt-36 min-h-screen flex flex-col justify-center items-center text-center px-6 
-        bg-gradient-to-br from-black via-gray-900 to-green-900 text-white"
+        className="pt-36 min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-br from-black via-gray-900 to-green-900 text-white"
       >
         <motion.h1
           initial={{ opacity: 0, y: -40 }}
@@ -107,7 +106,7 @@ export default function Page() {
             BiLOR Civil & Structural Engineering Design Ltd provides comprehensive civil and structural engineering services from concept design to project management. We are driven by quality, safety, innovation, and sustainable construction practices.
           </p>
 
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: "Mission", text: "Deliver innovative, safe, and sustainable engineering solutions while prioritizing quality, integrity, and teamwork." },
               { title: "Vision", text: "To be a well-recognized structural engineering firm in Kenya, renowned for excellence and creativity." },
@@ -125,7 +124,7 @@ export default function Page() {
       {/* SERVICES */}
       <section id="services" className="py-28 bg-gradient-to-b from-gray-50 to-white px-6 space-y-10">
         <h2 className="text-3xl font-bold text-center mb-14 text-gray-900">Our Services</h2>
-        <div className="max-w-6xl mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             "Structural Design & Analysis",
             "Project Management & Coordination",
@@ -137,7 +136,7 @@ export default function Page() {
             <motion.div
               key={i}
               whileHover={{ y: -6 }}
-              className="bg-white p-8 rounded-2xl border hover:border-green-600 hover:shadow-lg transition"
+              className="bg-white p-6 rounded-2xl border hover:border-green-600 hover:shadow-lg transition"
             >
               <h3 className="font-bold text-lg mb-2">{service}</h3>
               <p className="text-gray-600 text-sm">Reliable, safe, and professional engineering solutions tailored to your project needs.</p>
@@ -149,7 +148,7 @@ export default function Page() {
       {/* PROJECTS */}
       <section id="projects" className="py-28 max-w-6xl mx-auto px-6 space-y-10">
         <h2 className="text-3xl font-bold mb-12 text-gray-900">Our Projects</h2>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             "Residential Structural Design",
             "Commercial Developments",
@@ -170,7 +169,7 @@ export default function Page() {
           <img src="/team/Design3.jpeg" alt="BiLOR Logo" className="h-16 w-16" />
         </div>
 
-        <div className="max-w-6xl mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {teamMembers.map((member, i) => (
             <motion.div key={i} whileHover={{ scale: 1.05, y: -5 }} className="bg-white rounded-2xl p-6 shadow-lg border hover:shadow-2xl transition relative overflow-hidden">
               <div className="relative w-32 h-32 mx-auto mb-4">
